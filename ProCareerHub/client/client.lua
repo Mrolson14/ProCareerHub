@@ -31,9 +31,12 @@ function spawnPedAndRegisterTarget()
             Wait(0)
         end
 
-        DebugLog("Creating ped at coordinates: " .. pedData.pedspwan.x .. ", " .. pedData.pedspwan.y .. ", " .. pedData.pedspwan.z, "INFO")
+        -- Extract position and heading from vector4
+        local x, y, z, heading = pedData.pedspwan.x, pedData.pedspwan.y, pedData.pedspwan.z, pedData.pedspwan.w
+
+        DebugLog(("Creating ped at coordinates: x=%s, y=%s, z=%s, heading=%s"):format(x, y, z, heading), "INFO")
         -- Create the ped
-        local ped = CreatePed(4, model, pedData.pedspwan.x, pedData.pedspwan.y, pedData.pedspwan.z - 1.0, pedData.heading, false, true)
+        local ped = CreatePed(4, model, x, y, z - 1.0, heading, false, true)
         SetEntityInvincible(ped, true)
         SetBlockingOfNonTemporaryEvents(ped, true)
         FreezeEntityPosition(ped, true)
