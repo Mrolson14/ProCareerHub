@@ -6,8 +6,7 @@ Config.Debug = true
 Config.Questions = {
     [1] = {
         pedmodel = "s_m_y_cop_01",
-        pedspwan = vector3(-1732.80, -736.93, 10.41),
-        heading = 180.0,
+        pedspwan = vector4(434.02, -979.24, 30.71, 95),
         policeapp = {
             [1] = "What is your name?",
             [2] = "How old are you?",
@@ -22,9 +21,8 @@ Config.Questions = {
         }
     },
     [2] = {
-        pedmodel = "s_m_y_cop_01",
-        pedspwan = vector3(-1731.25, -737.13, 10.38),
-        heading = 180.0,
+        pedmodel = "s_f_y_scrubs_01",
+        pedspwan = vector4(309.82, -585.76, 43.25, 94),
         amblanceapp = {
             [1] = "What is your name?",
             [2] = "How old are you?",
@@ -39,9 +37,8 @@ Config.Questions = {
         }
     },
     [3] = {
-        pedmodel = "s_m_y_cop_01",
-        pedspwan = vector3(-1729.06, -737.42, 10.33),
-        heading = 180.0,
+        pedmodel = "mp_m_waremech_01",
+        pedspwan = vector4(-226.15, -1324.31, 31.30, 81),
         mechanicapp = {
             [1] = "What is your name?",
             [2] = "How old are you?",
